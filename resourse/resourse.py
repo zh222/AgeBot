@@ -62,7 +62,6 @@ def get_pid(package_name, device_name=None):
         return ''
 
 
-# 收集特定对象的数量
 def get_object_counts(package_name, device_name=None):
     object_types = [
         "Views",

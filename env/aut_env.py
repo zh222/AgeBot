@@ -47,7 +47,7 @@ class AndroidAppEnv(gym.Env):
         self.activities_number = len(self.activities) + 10
         self.start_time = start_time
         self.resource_type = resource
-        # Appium 配置
+
         self.desired_caps = {
             "platformName": "android",
             "platformVersion": version,
@@ -304,7 +304,7 @@ class AndroidAppEnv(gym.Env):
         return resource['is_bug']
 
     def Edittext(self):
-        text_boxes = self.driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.EditText")  # 查找所有文本框
+        text_boxes = self.driver.find_elements(AppiumBy.CLASS_NAME, "android.widget.EditText")
         for text_box in text_boxes:
             resource = init_resource(self.package)
             for i in range(self.exe_number):
