@@ -308,7 +308,7 @@ class AndroidAppEnv(gym.Env):
         for text_box in text_boxes:
             resource = init_resource(self.package)
             for i in range(self.exe_number):
-                text_box.click()  # 选中文本框
+                text_box.click()
                 current_string = ''.join(
                     random.choice('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
                     for _ in range(random.randint(5, 10)))
