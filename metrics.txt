@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Resources Collected and Their Descriptions.}
+\label{table:metric}
+\begin{tabular}{|m{2.2cm}<{\centering}|m{1cm}<{\centering}|m{9cm}<{\centering}|}
+\hline
+\textbf{Metric} & \textbf{Unit} & \textbf{Description}           \\ \hline\hline
+Views  & Count & Number of view objects currently used in the app\\ \cline{1-3}
+ViewRootImpl & Count & Number of root objects in the view tree\\ \cline{1-3}
+AppContexts & Count & Number of app context instances\\ \cline{1-3}
+Activities & Count & Number of currently living Activity instances\\ \cline{1-3}
+Assets & Count & Number of resource files (e.g., images, fonts, etc.) loaded\\ \cline{1-3}
+Asset Managers & Count & Number of manager instances managing Assets\\ \cline{1-3}
+Local Binders & Count & the number of Binder objects in the local process\\ \cline{1-3}
+Proxy Binders & Count & Number of proxy Binder objects in cross-process communication\\ \cline{1-3}
+Parcel Memory & Bytes & Total size of memory currently used for Parcel data transfer\\ \cline{1-3}
+Parcel Count & Count & Number of Parcel objects currently active\\ \cline{1-3}
+Death Recipients & Count & Number of Binder objects with DeathRecipient registered \\ \cline{1-3}
+OpenSSL Sockets & Count & Number of OpenSSL sockets currently open for encryption
+network communications\\ \cline{1-3}
+WebViews & Count & Number of WebView instances currently in use in the app\\ \cline{1-3}
+Java Heap & Bytes & The current size of the allocated Java heap memory\\ \cline{1-3}
+Native Heap & Bytes & Current memory size allocated to the native heap (C/C++ layer)\\ \cline{1-3}
+FD Number & Count & The number of File Descriptor, denoting the number of open file or resource handles.\\ \cline{1-3}
+DB Number & Count & Number of currently open database connections\\ \cline{1-3}
+Wake Lock Number & Count & The number of WakeLocks currently held\\\cline{1-3}
+Socket Number & Count & Number of currently open network sockets\\\cline{1-3}
+CPU & Percent & CPU usage occupied by the current app\\\cline{1-3}
+RSS & Bytes & The current Resident Set Size, which represents the size of the physical memory actually used by the app\\\cline{1-3}
+\end{tabular}
+\end{table}
